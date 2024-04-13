@@ -88,8 +88,9 @@ CREATE TABLE IF NOT EXISTS Substances(
 	description VARCHAR(255) NULL,
     allergen BOOL NULL,		/* flag if substance is reported to cause allergy */
     toxin BOOL NULL, 		/* flag if substance is reported to be toxic */
-    MSC float NULL,     /* Maximum Saftey Concentration. Needs to be filled if the substance is a knonw toxin */
-    MSC_unit ENUM('g', 'mg', 'ug', 'ng') NULL
+    MSC FLOAT NULL,     /* Maximum Saftey Concentration. Needs to be filled if the substance is a knonw toxin */
+    uint INT,
+    FOREIGN KEY (uint) REFERENCES Units(id)
 );
 
 CREATE TABLE IF NOT EXISTS User_Allergies( /* Combined table for Users and Substances */
