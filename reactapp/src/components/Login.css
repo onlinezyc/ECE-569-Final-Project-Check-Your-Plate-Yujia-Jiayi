@@ -1,36 +1,78 @@
-/* reactapp/components/Login.css */
+/* 设置整个登录容器 */
 .login-container {
-    max-width: 300px;
-    margin: auto;
+    width: 100%;
+    max-width: 400px; /* 限制最大宽度 */
+    margin: auto; /* 水平居中显示 */
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    background-color: #f9f9f9; /* 背景色 */
+    border-radius: 8px; /* 边角圆滑 */
 }
 
-.login-container div {
-    margin-bottom: 15px;
+/* 标题样式 */
+.login-container h2 {
+    text-align: center; /* 标题居中 */
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.login-container label {
-    display: block;
+/* 输入组的通用布局 */
+.input-group {
+    margin-bottom: 15px; /* 输入组件间距 */
+    display: flex;
+    flex-direction: column;
 }
 
-.login-container input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+/* 输入组内的标签样式 */
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px; /* 标签与输入框间距 */
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+/* 输入框的样式 */
+.input-group input,
+.input-group select {
+    width: 100%; /* 宽度为100% */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    background-color: white;
+    font-size: 16px; /* 文字大小 */
+}
+
+/* 按钮组 */
+.button-group {
+    display: flex;
+    flex-direction: column; /* 按钮垂直排列 */
+    gap: 10px; /* 按钮间的间隔 */
+}
+
+/* 所有按钮的通用样式 */
+.button-group button {
+    width: 100%; /* 按钮宽度填满容器 */
+    padding: 12px; /* 按钮内边距 */
     color: white;
+    background-color: #007bff; /* 背景色 */
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    outline: none; /* 移除点击后的轮廓 */
+    font-size: 16px; /* 文字大小 */
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* 鼠标悬停在按钮上的样式 */
+.button-group button:hover {
+    background-color: #0056b3; /* 深蓝色背景 */
+}
+
+/* 次要按钮的样式 */
+.button-group button.secondary {
+    background-color: #6c757d; /* 灰色背景 */
+}
+
+/* 次要按钮鼠标悬停的样式 */
+.button-group button.secondary:hover {
+    background-color: #5a6268; /* 深灰色背景 */
 }
