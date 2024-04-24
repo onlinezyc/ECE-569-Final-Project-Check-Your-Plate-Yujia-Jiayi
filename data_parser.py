@@ -12,9 +12,13 @@ def write_as_json(filename, obj):
 def data_extractor(data, ff = True):
     if ff:
         data = data["FoundationFoods"]
+        main_key = "FoundationFood"
+        
     else:
         data = data["SurveyFoods"]
-    digest = {"foundationFood" : []}
+        main_key = "SurveyFoods"
+
+    digest = {main_key : []}
     for item in data:
         foodItem = {"fdcId": None, "foodName": None, "nutrients": [], "conversions": None, "portions": None}
         foodItem["foodName"] = item["description"]
@@ -39,23 +43,27 @@ def data_extractor(data, ff = True):
             portions = item["foodPortions"]
             foodItem["portions"] = portions  
 
-        digest['foundationFood'].append(foodItem)
+        digest[main_key].append(foodItem)
 
-    return json.dumps(digest, indent=4)
+    return digest
     
 ff_r_path = "data/USDA_foundation_food.json"  # read from path for foundation food data
-ff_w_path = "data/foundation_food_digest.json"  # write to path for foundation food data
-
-data = read_json_file(ff_r_path)  # foundation food
-refined_data = data_extractor(data)
-write_as_json(ff_w_path, refined_data)
-
+ff_w_path = "data/foundation_food.json"
 
 sf_r_path = "data/USDA_survey_food.json"  # read from path for survey food data
-sf_w_path = "data/survey_food_digest.json"  # write to path for survey food data
+sf_w_path = "data/survey_food.json"
 
-data = read_json_file(sf_r_path)  # survey food
-refined_data = data_extractor(data, False)
-print(refined_data)
-write_as_json(sf_w_path, refined_data)
+ff_data = read_json_file(ff_r_path)  # foundation food
+refined_ff_data = data_extractor(ff_data)
+# write_as_json(ff_w_path, refined_ff_data)  # dump as .json file
+
+
+sf_data = read_json_file(sf_r_path)  # survey food
+refined_sf_data = data_extractor(sf_data, False)
+# write_as_json(sf_w_path, refined_sf_data)  # dump as .json file
+
+
+w_path = "data/food_info_digest.json"
+data = {**refined_ff_data, **refined_sf_data}  # merge the processed foundation food records and survey food records
+write_as_json(w_path, data)  # dump as .json file
 
