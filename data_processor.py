@@ -1,3 +1,9 @@
+"""
+[332:569] Database Engineering Final Project 
+Yujia Cheng
+April 18th, 2024
+"""
+
 import mysql.connector 
 import json
 
@@ -65,29 +71,14 @@ def add_substances(conn, data):
     """ For Inserting substances records into DB Substances table using prepared statement """
     cursor = conn.cursor(prepared = True)  # for prepared statement
     table = "Substances"  # table of interest
-    col = "refID"  # column of interest
-    counter = 0
-    query = "SELECT COUNT(*) FROM " + table + " WHERE " + col + " = %s;"  # prepared query
     stmt = "INSERT INTO " + table + " (name, refID) VALUES (%s, %s);"  # prepared statement
-    
+    counter = 0
+
     try:
        for key in data:
-        record = data[key]
-        for entry in record:
-            nutrients = entry['nutrients']
-            for nutrient in nutrients:
-                if nutrient["sourceID"] == "":
-                    id_value = 0
-                else: 
-                    id_value = float(nutrient["sourceID"])
-                idx = id_value + int(nutrient["rank"])
-                cursor.execute(query, (idx,))
-                result = cursor.fetchone()
-                check = result[0] == 0 
-                if check:  # add substance only if substance is not in the table
-                    sub_name = nutrient["name"]
-                    cursor.execute(stmt, (sub_name, idx))
-                    counter += 1
+            value = data[key]
+            cursor.execute(stmt, (value, key))
+            counter += 1
        
        conn.commit()  # commit only after all prepared statements have executed
        print(f"Committed {counter} changes to {table}.")
@@ -121,7 +112,8 @@ if __name__ == "__main__":
 
             # table_name = "Food_items"
             path = "data/food_info_digest.json"
-            data = read_json_file(path)
+            subs_path = "data/substance_list.json"
+            data = read_json_file(subs_path)
             add_substances(conn, data)
             # add_food(conn, data) 
 
