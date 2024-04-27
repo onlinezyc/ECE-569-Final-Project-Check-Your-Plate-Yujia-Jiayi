@@ -24,6 +24,26 @@ def read_json_file(filename):
         print(f"An unexpected error occurred: {e}.")
 
 
+def count_record(conn, table):
+    cursor = conn.cursor(prepared = True)
+    try:
+        stmt = f"SELECT COUNT(*) FROM %s"
+        cursor.execute(stmt, (table,))
+        result = result = cursor.fetchone()
+        if result:
+            count = result[0]
+            print(f"Table {table} contains {count} records")
+            return int(count)
+
+        else:
+            print(f"No record found. {result}")  ##
+            return None
+    except mysql.connector.Error as err:
+        print("Error: {}".format(err))       
+    
+    finally:
+        cursor.close()
+
 # def print_table(conn, table):
 #     """ Select all records within a table and print out """
 #     cursor = conn.cursor()  # for regular statement
@@ -40,13 +60,15 @@ def add_substances(conn, data):
     """ For Inserting substances records into DB Substances table using prepared statement """
     cursor = conn.cursor(prepared = True)  # for prepared statement
     table = "Substances"  # table of interest
-    stmt = "INSERT INTO " + table + " (name, refID) VALUES (%s, %s);"  # prepared statement
+    stmt = "INSERT INTO " + table + " (refID, name, unit) VALUES (%s, %s, %s);"  # prepared statement
     counter = 0
 
     try:
        for key in data:
-            value = data[key]
-            cursor.execute(stmt, (value, key))
+            values = data[key]
+            name = values[0]["name"]
+            unit = values[1]["unit"]
+            cursor.execute(stmt, (key, name, unit))
             counter += 1
        
        conn.commit()  # commit only after all prepared statements have executed
@@ -60,11 +82,16 @@ def add_substances(conn, data):
         cursor.close()  # end cursor session
 
 
-def query_id_using_name(conn, table, name):
+def subs_finder(conn, table, name, unit):
     cursor = conn.cursor()
     try:
-        stmt = f"SELECT id FROM {table} WHERE name = %s;"
-        cursor.execute(stmt, (name,))
+        if name == "Energy":
+            stmt = f"SELECT id FROM {table} WHERE name = %s AND unit = %s;"
+            cursor.execute(stmt, (name, unit))
+        else:
+            stmt = f"SELECT id FROM {table} WHERE name = %s;"
+            cursor.execute(stmt, (name,))
+            
         result = cursor.fetchone()
         if result:
             idx = result[0]
@@ -87,7 +114,7 @@ def add_food(conn, data):
     f_counter = 0
     fn_counter = 0
     f_stmt = "INSERT INTO Foods (name) VALUES (%s);"  # prepared stmt for inserting record into table Foods
-    fn_stmt = "INSERT INTO Food_nutrients (foodID, subsID) VALUES (%s, %s);"  # prepared stmt for inserting record into table Food_nutrients
+    fn_stmt = "INSERT INTO Food_nutrients (foodID, subsID, amount, unit) VALUES (%s, %s, %s, %s);"  # prepared stmt for inserting record into table Food_nutrients
     
     print("Parsing data to DB. Please wait. This may take up to 15 minutes.")
     try:
@@ -100,16 +127,19 @@ def add_food(conn, data):
 
             nutrients = entry['nutrients']
             for nutrient in nutrients:
-                n_name = nutrient["name"]
-                subsID = query_id_using_name(conn, 'Substances', n_name)
+                n_name = nutrient["name"] if nutrient["name"] != "Sugars, total including NLEA" else "Total Sugars"
+                amount = nutrient["amount"]
+                unit = nutrient["unit"] if nutrient["unit"] != "\u00c2\u00b5g" else "ug"               
+                subsID = subs_finder(conn, 'Substances', n_name, unit)
                 if subsID == None:
-                    print(f"New substance detected in food: {f_name}!")
-                    # nutrient["source"]
-                    # query = ""
-                    # cursor.execute
+                    print(f"New substance: {n_name} detected in food: {f_name}!")
+                    count = count_record(conn, "Substances")
+                    stmt = "INSERT INTO Substances (name, refID, unit) VALUES (%s, %s, %s)"
+                    refID = count + 0.6  # 0.6 is a randomly chose value 
+                    cursor.execute(stmt, (n_name, refID, unit))
 
                 else:  # if subsID != None:
-                    cursor.execute(fn_stmt, (f_counter, subsID))
+                    cursor.execute(fn_stmt, (f_counter, subsID, amount, unit))
                     fn_counter += 1
 
        conn.commit()  # commit only after all prepared statements have executed
@@ -119,7 +149,6 @@ def add_food(conn, data):
     except mysql.connector.Error as err:
         print("Error: {}".format(err))
         conn.rollback()  # Rollback in case of error
-        conn.execute("TRUNCATE TABLE Substances")  # also rolls back table Substances
      
     finally:
         cursor.close()  # end cursor session
