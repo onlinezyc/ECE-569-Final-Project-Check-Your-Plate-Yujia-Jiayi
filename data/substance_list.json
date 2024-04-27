@@ -1,236 +1,1770 @@
 {
-    "7794.0": "Cryptoxanthin, beta",
-    "7867.0": "Lycopene",
-    "8543.0": "Tocopherol, delta",
-    "8846.0": "Tocotrienol, gamma",
-    "8947.0": "Tocotrienol, delta",
-    "6701.0": "Vitamin C, total ascorbic acid",
-    "6804.0": "Thiamin",
-    "6905.0": "Riboflavin",
-    "7317.0": "Folate, total",
-    "9329.0": "Vitamin K (Dihydrophylloquinone)",
-    "9230.0": "Vitamin K (phylloquinone)",
-    "16005.0": "Fatty acids, total trans",
-    "10306.0": "Fatty acids, total saturated",
-    "10609.0": "SFA 8:0",
-    "10911.0": "SFA 12:0",
-    "11112.0": "SFA 14:0",
-    "15921.0": "PUFA 22:6 n-3 (DHA)",
-    "11824.0": "SFA 22:0",
-    "15629.0": "PUFA 20:5 n-3 (EPA)",
-    "15831.0": "PUFA 22:5 n-3 (DPA)",
-    "11453.0": "SFA 17:0",
-    "11954.0": "SFA 24:0",
-    "16182.0": "TFA 16:1 t",
-    "13471.0": "MUFA 24:1 c",
-    "12874.0": "MUFA 18:1 c",
-    "13875.0": "PUFA 18:2 n-6 c,c",
-    "13276.0": "MUFA 22:1 c",
-    "12687.0": "MUFA 17:1",
-    "16193.0": "Fatty acids, total trans-monoenoic",
-    "12297.0": "MUFA 15:1",
-    "14851.0": "PUFA 18:3 n-3 c,c,c (ALA)",
-    "15352.0": "PUFA 20:3 n-3",
-    "16018.0": "PUFA 22:4",
-    "803.0": "Protein",
-    "1207.0": "Ash",
-    "2409.0": "Starch",
-    "2012.0": "Fructose",
-    "2113.0": "Lactose",
-    "668.0": "Energy",
-    "2387.0": "Galactose",
-    "1491.0": "Fiber, total dietary",
-    "5703.0": "Iron, Fe",
-    "5804.0": "Magnesium, Mg",
-    "5905.0": "Phosphorus, P",
-    "6107.0": "Sodium, Na",
-    "6312.0": "Copper, Cu",
-    "6415.0": "Manganese, Mn",
-    "7740.0": "Vitamin A, RAE",
-    "7761.0": "Carotene, beta",
-    "7772.0": "Carotene, alpha",
-    "15320.0": "PUFA 20:4",
-    "14877.0": "PUFA 18:4",
-    "12045.0": "Fatty acids, total monounsaturated",
-    "13546.0": "Fatty acids, total polyunsaturated",
-    "11252.0": "SFA 15:0",
-    "16184.0": "TFA 18:1 t",
-    "16214.0": "TFA 22:1 t",
-    "16275.0": "TFA 18:2 t not further defined",
-    "13970.0": "PUFA 18:2 CLAs",
-    "14972.0": "PUFA 20:2 n-6 c,c",
-    "12473.0": "MUFA 16:1 c",
-    "14785.0": "PUFA 18:3 n-6 c,c,c",
-    "16314.0": "Fatty acids, total trans-polyenoic",
-    "15453.0": "PUFA 20:3 n-6",
-    "10407.0": "SFA 4:0",
-    "10508.0": "SFA 6:0",
-    "10710.0": "SFA 10:0",
-    "11313.0": "SFA 16:0",
-    "11514.0": "SFA 18:0",
-    "11715.0": "SFA 20:0",
-    "7898.0": "Lutein + zeaxanthin",
-    "8341.0": "Tocopherol, beta",
-    "8442.0": "Tocopherol, gamma",
-    "8644.0": "Tocotrienol, alpha",
-    "8745.0": "Tocotrienol, beta",
-    "7006.0": "Niacin",
-    "7110.0": "Pantothenic acid",
-    "7215.0": "Vitamin B-6",
-    "9378.0": "Vitamin K (Menaquinone-4)",
-    "1004.0": "Total lipid (fat)",
-    "1315.0": "Carbohydrate, by difference",
-    "508.0": "Energy",
-    "1810.0": "Sucrose",
-    "1911.0": "Glucose",
-    "2214.0": "Maltose",
-    "355.0": "Water",
-    "5601.0": "Calcium, Ca",
-    "6006.0": "Potassium, K",
-    "6209.0": "Zinc, Zn",
-    "6517.0": "Selenium, Se",
-    "8228.0": "Vitamin E (alpha-tocopherol)",
-    "702.0": "Nitrogen",
-    "12323.0": "MUFA 14:1 c",
-    "13230.0": "MUFA 20:1 c",
-    "13277.1": "MUFA 22:1 n-9",
-    "15798.0": "PUFA 22:2",
-    "10899.0": "SFA 11:0",
-    "16494.0": "TFA 18:3 t",
-    "15511.0": "PUFA 20:3 n-9",
-    "7641.0": "Choline, total",
-    "7713.0": "Choline, from glycerophosphocholine",
-    "7744.0": "Betaine",
-    "7725.0": "Choline, from sphingomyelin",
-    "7680.0": "Choline, free",
-    "7702.0": "Choline, from phosphotidyl choline",
-    "7691.0": "Choline, from phosphocholine",
-    "1769.3": "Sugars, Total",
-    "1325.2": "Carbohydrate, by summation",
-    "16295.0": "Fatty acids, total trans-dienoic",
-    "12826.0": "MUFA 17:1 c",
-    "13981.0": "PUFA 18:2 c",
-    "14743.0": "PUFA 18:3 c",
-    "15285.0": "PUFA 20:3 c",
-    "15586.0": "PUFA 20:4c",
-    "15787.0": "PUFA 20:5c",
-    "15988.0": "PUFA 22:5 c",
-    "16089.0": "PUFA 22:6 c",
-    "15090.0": "PUFA 20:2 c",
-    "1198.0": "Total fat (NLEA)",
-    "7796.0": "Cryptoxanthin, alpha",
-    "7765.2": "trans-beta-Carotene",
-    "7763.1": "cis-beta-Carotene",
-    "7899.3": "cis-Lutein/Zeaxanthin",
-    "7869.1": "cis-Lycopene",
-    "7900.1": "Lutein",
-    "7902.2": "Zeaxanthin",
-    "7753.0": "Vitamin A",
-    "7718.0": "Vitamin B-12",
-    "7749.0": "Retinol",
-    "9035.0": "Vitamin D2 (ergocalciferol)",
-    "9046.0": "Vitamin D3 (cholecalciferol)",
-    "9028.0": "Vitamin D (D2 + D3)",
-    "8974.0": "Vitamin D (D2 + D3), International Units",
-    "16301.0": "Cholesterol",
-    "9057.0": "25-hydroxycholecalciferol",
-    "6464.0": "Iodine, I",
-    "13028.0": "MUFA 20:1",
-    "15056.0": "PUFA 18:3i",
-    "16801.0": "Tryptophan",
-    "16902.0": "Threonine",
-    "17306.0": "Methionine",
-    "17508.0": "Phenylalanine",
-    "17609.0": "Tyrosine",
-    "18013.0": "Alanine",
-    "18215.0": "Glutamic acid",
-    "18316.0": "Glycine",
-    "18417.0": "Proline",
-    "17003.0": "Isoleucine",
-    "17104.0": "Leucine",
-    "17205.0": "Lysine",
-    "17407.0": "Cystine",
-    "17710.0": "Valine",
-    "17811.0": "Arginine",
-    "17912.0": "Histidine",
-    "18114.0": "Aspartic acid",
-    "18518.0": "Serine",
-    "1557.0": "Fiber, insoluble",
-    "1535.0": "Fiber, soluble",
-    "18621.0": "Hydroxyproline",
-    "13130.0": "MUFA 22:1",
-    "12717.0": "MUFA 18:1",
-    "13718.0": "PUFA 18:2",
-    "14519.0": "PUFA 18:3",
-    "10482.0": "SFA 5:0",
-    "10583.0": "SFA 7:0",
-    "10684.0": "SFA 9:0",
-    "12085.0": "MUFA 12:1",
-    "16331.0": "TFA 14:1 t",
-    "16370.0": "TFA 20:1 t",
-    "11831.0": "SFA 21:0",
-    "13278.2": "MUFA 22:1 n-11",
-    "11932.0": "SFA 23:0",
-    "15358.0": "PUFA 22:3",
-    "18676.0": "Cysteine",
-    "1000435.0": "10-Formyl folic acid (10HCOFA)",
-    "1000436.0": "5-Formyltetrahydrofolic acid (5-HCOH4",
-    "1000432.0": "5-methyl tetrahydrofolate (5-MTHF)",
-    "7911.0": "Phytofluene",
-    "7900.0": "Phytoene",
-    "7871.2": "trans-Lycopene",
-    "6599.0": "Boron, B",
-    "6555.0": "Cobalt, Co",
-    "6559.0": "Molybdenum, Mo",
-    "6613.0": "Nickel, Ni",
-    "6549.0": "Sulfur, S",
-    "15089.0": "PUFA 20:3",
-    "7266.0": "Biotin",
-    "16841.0": "Beta-sitosterol",
-    "16740.0": "Brassicasterol",
-    "16863.0": "Campestanol",
-    "16639.0": "Campesterol",
-    "16873.0": "Delta-5-avenasterol",
-    "16878.0": "Phytosterols, other",
-    "16869.0": "Beta-sitostanol",
-    "16538.0": "Stigmasterol",
-    "1593.0": "Total dietary fiber (AOAC 2011.25)",
-    "3736.0": "Citric acid",
-    "4443.0": "Malic acid",
-    "1779.0": "Total Sugars",
-    "1237.0": "Energy (Atwater General Factors)",
-    "1248.0": "Energy (Atwater Specific Factors)",
-    "16226": "Delta-7-Stigmastenol",
-    "15801": "Stigmastadiene",
-    "16443.0": "TFA 18:2 t",
-    "16857.0": "Ergosterol",
-    "16255": "Ergothioneine",
-    "8730": "Vitamin D4",
-    "16210": "Ergosta-7-enol",
-    "16211": " Ergosta-7,22-dienol",
-    "1327": "Beta-glucan",
-    "9961.0": "Glutathione",
-    "20027.0": "Daidzin",
-    "20038.0": "Genistin",
-    "20049.0": "Glycitin",
-    "2450": "Verbascose",
-    "2588.0": "Raffinose",
-    "2689.0": "Stachyose",
-    "19810.0": "Daidzein",
-    "19911.0": "Genistein",
-    "7787.0": "Carotene, gamma",
-    "4645.0": "Oxalic acid",
-    "4948.0": "Quinic acid",
-    "1599.4": "Low Molecular Weight Dietary Fiber (LMWDF)",
-    "1598.3": "High Molecular Weight Dietary Fiber (HMWDF)",
-    "4847.0": "Pyruvic acid",
-    "18421.0": "Alcohol, ethyl",
-    "18562.0": "Caffeine",
-    "18663.0": "Theobromine",
-    "7431.0": "Folic acid",
-    "7532.0": "Folate, food",
-    "7635.0": "Folate, DFE",
-    "8493.0": "Vitamin E, added",
-    "7918.0": "Vitamin B-12, added",
-    "12326.0": "MUFA 16:1"
+    "7794.0": [
+        {
+            "name": "Cryptoxanthin, beta"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "8543.0": [
+        {
+            "name": "Tocopherol, delta"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6804.0": [
+        {
+            "name": "Thiamin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6905.0": [
+        {
+            "name": "Riboflavin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7317.0": [
+        {
+            "name": "Folate, total"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "9230.0": [
+        {
+            "name": "Vitamin K (phylloquinone)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "16005.0": [
+        {
+            "name": "Fatty acids, total trans"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "10306.0": [
+        {
+            "name": "Fatty acids, total saturated"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11112.0": [
+        {
+            "name": "SFA 14:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11824.0": [
+        {
+            "name": "SFA 22:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11453.0": [
+        {
+            "name": "SFA 17:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11954.0": [
+        {
+            "name": "SFA 24:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13471.0": [
+        {
+            "name": "MUFA 24:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12874.0": [
+        {
+            "name": "MUFA 18:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13875.0": [
+        {
+            "name": "PUFA 18:2 n-6 c,c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13276.0": [
+        {
+            "name": "MUFA 22:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12687.0": [
+        {
+            "name": "MUFA 17:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16193.0": [
+        {
+            "name": "Fatty acids, total trans-monoenoic"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14851.0": [
+        {
+            "name": "PUFA 18:3 n-3 c,c,c (ALA)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "803.0": [
+        {
+            "name": "Protein"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1207.0": [
+        {
+            "name": "Ash"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2409.0": [
+        {
+            "name": "Starch"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2012.0": [
+        {
+            "name": "Fructose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "668.0": [
+        {
+            "name": "Energy"
+        },
+        {
+            "unit": "kJ"
+        }
+    ],
+    "1491.0": [
+        {
+            "name": "Fiber, total dietary"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "5703.0": [
+        {
+            "name": "Iron, Fe"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "5804.0": [
+        {
+            "name": "Magnesium, Mg"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "5905.0": [
+        {
+            "name": "Phosphorus, P"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6107.0": [
+        {
+            "name": "Sodium, Na"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6312.0": [
+        {
+            "name": "Copper, Cu"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6415.0": [
+        {
+            "name": "Manganese, Mn"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7740.0": [
+        {
+            "name": "Vitamin A, RAE"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7761.0": [
+        {
+            "name": "Carotene, beta"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "15320.0": [
+        {
+            "name": "PUFA 20:4"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12045.0": [
+        {
+            "name": "Fatty acids, total monounsaturated"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13546.0": [
+        {
+            "name": "Fatty acids, total polyunsaturated"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11252.0": [
+        {
+            "name": "SFA 15:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16184.0": [
+        {
+            "name": "TFA 18:1 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16275.0": [
+        {
+            "name": "TFA 18:2 t not further defined"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13970.0": [
+        {
+            "name": "PUFA 18:2 CLAs"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14972.0": [
+        {
+            "name": "PUFA 20:2 n-6 c,c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12473.0": [
+        {
+            "name": "MUFA 16:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14785.0": [
+        {
+            "name": "PUFA 18:3 n-6 c,c,c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11313.0": [
+        {
+            "name": "SFA 16:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11514.0": [
+        {
+            "name": "SFA 18:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11715.0": [
+        {
+            "name": "SFA 20:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7898.0": [
+        {
+            "name": "Lutein + zeaxanthin"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "8341.0": [
+        {
+            "name": "Tocopherol, beta"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "8442.0": [
+        {
+            "name": "Tocopherol, gamma"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7006.0": [
+        {
+            "name": "Niacin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7110.0": [
+        {
+            "name": "Pantothenic acid"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7215.0": [
+        {
+            "name": "Vitamin B-6"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "1004.0": [
+        {
+            "name": "Total lipid (fat)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1315.0": [
+        {
+            "name": "Carbohydrate, by difference"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "508.0": [
+        {
+            "name": "Energy"
+        },
+        {
+            "unit": "kcal"
+        }
+    ],
+    "1810.0": [
+        {
+            "name": "Sucrose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "355.0": [
+        {
+            "name": "Water"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "5601.0": [
+        {
+            "name": "Calcium, Ca"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6006.0": [
+        {
+            "name": "Potassium, K"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6209.0": [
+        {
+            "name": "Zinc, Zn"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "6517.0": [
+        {
+            "name": "Selenium, Se"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "8228.0": [
+        {
+            "name": "Vitamin E (alpha-tocopherol)"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "702.0": [
+        {
+            "name": "Nitrogen"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13230.0": [
+        {
+            "name": "MUFA 20:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13277.1": [
+        {
+            "name": "MUFA 22:1 n-9"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7641.0": [
+        {
+            "name": "Choline, total"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7713.0": [
+        {
+            "name": "Choline, from glycerophosphocholine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7744.0": [
+        {
+            "name": "Betaine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7680.0": [
+        {
+            "name": "Choline, free"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7702.0": [
+        {
+            "name": "Choline, from phosphotidyl choline"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7691.0": [
+        {
+            "name": "Choline, from phosphocholine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "1769.3": [
+        {
+            "name": "Sugars, Total"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1325.2": [
+        {
+            "name": "Carbohydrate, by summation"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16295.0": [
+        {
+            "name": "Fatty acids, total trans-dienoic"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12826.0": [
+        {
+            "name": "MUFA 17:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13981.0": [
+        {
+            "name": "PUFA 18:2 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14743.0": [
+        {
+            "name": "PUFA 18:3 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15586.0": [
+        {
+            "name": "PUFA 20:4c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15090.0": [
+        {
+            "name": "PUFA 20:2 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1198.0": [
+        {
+            "name": "Total fat (NLEA)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "6701.0": [
+        {
+            "name": "Vitamin C, total ascorbic acid"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7765.2": [
+        {
+            "name": "trans-beta-Carotene"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7763.1": [
+        {
+            "name": "cis-beta-Carotene"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7899.3": [
+        {
+            "name": "cis-Lutein/Zeaxanthin"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7869.1": [
+        {
+            "name": "cis-Lycopene"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7900.1": [
+        {
+            "name": "Lutein"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7867.0": [
+        {
+            "name": "Lycopene"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7902.2": [
+        {
+            "name": "Zeaxanthin"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "1911.0": [
+        {
+            "name": "Glucose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2214.0": [
+        {
+            "name": "Maltose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "10407.0": [
+        {
+            "name": "SFA 4:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "10710.0": [
+        {
+            "name": "SFA 10:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14877.0": [
+        {
+            "name": "PUFA 18:4"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16314.0": [
+        {
+            "name": "Fatty acids, total trans-polyenoic"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15453.0": [
+        {
+            "name": "PUFA 20:3 n-6"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7718.0": [
+        {
+            "name": "Vitamin B-12"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "10609.0": [
+        {
+            "name": "SFA 8:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "10911.0": [
+        {
+            "name": "SFA 12:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15629.0": [
+        {
+            "name": "PUFA 20:5 n-3 (EPA)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15831.0": [
+        {
+            "name": "PUFA 22:5 n-3 (DPA)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16182.0": [
+        {
+            "name": "TFA 16:1 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15352.0": [
+        {
+            "name": "PUFA 20:3 n-3"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16018.0": [
+        {
+            "name": "PUFA 22:4"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7749.0": [
+        {
+            "name": "Retinol"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "12323.0": [
+        {
+            "name": "MUFA 14:1 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16494.0": [
+        {
+            "name": "TFA 18:3 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15798.0": [
+        {
+            "name": "PUFA 22:2"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15285.0": [
+        {
+            "name": "PUFA 20:3 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15787.0": [
+        {
+            "name": "PUFA 20:5c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15988.0": [
+        {
+            "name": "PUFA 22:5 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "8644.0": [
+        {
+            "name": "Tocotrienol, alpha"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "9046.0": [
+        {
+            "name": "Vitamin D3 (cholecalciferol)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "9028.0": [
+        {
+            "name": "Vitamin D (D2 + D3)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "8974.0": [
+        {
+            "name": "Vitamin D (D2 + D3), International Units"
+        },
+        {
+            "unit": "IU"
+        }
+    ],
+    "16301.0": [
+        {
+            "name": "Cholesterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "9057.0": [
+        {
+            "name": "25-hydroxycholecalciferol"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "6464.0": [
+        {
+            "name": "Iodine, I"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "8745.0": [
+        {
+            "name": "Tocotrienol, beta"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "13028.0": [
+        {
+            "name": "MUFA 20:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16214.0": [
+        {
+            "name": "TFA 22:1 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2113.0": [
+        {
+            "name": "Lactose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "10508.0": [
+        {
+            "name": "SFA 6:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "9378.0": [
+        {
+            "name": "Vitamin K (Menaquinone-4)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "2387.0": [
+        {
+            "name": "Galactose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15056.0": [
+        {
+            "name": "PUFA 18:3i"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7725.0": [
+        {
+            "name": "Choline, from sphingomyelin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "15921.0": [
+        {
+            "name": "PUFA 22:6 n-3 (DHA)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "8846.0": [
+        {
+            "name": "Tocotrienol, gamma"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "8947.0": [
+        {
+            "name": "Tocotrienol, delta"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "10899.0": [
+        {
+            "name": "SFA 11:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16089.0": [
+        {
+            "name": "PUFA 22:6 c"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16801.0": [
+        {
+            "name": "Tryptophan"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16902.0": [
+        {
+            "name": "Threonine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17306.0": [
+        {
+            "name": "Methionine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17508.0": [
+        {
+            "name": "Phenylalanine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17609.0": [
+        {
+            "name": "Tyrosine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18013.0": [
+        {
+            "name": "Alanine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18215.0": [
+        {
+            "name": "Glutamic acid"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18316.0": [
+        {
+            "name": "Glycine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18417.0": [
+        {
+            "name": "Proline"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17003.0": [
+        {
+            "name": "Isoleucine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17104.0": [
+        {
+            "name": "Leucine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17205.0": [
+        {
+            "name": "Lysine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17407.0": [
+        {
+            "name": "Cystine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17710.0": [
+        {
+            "name": "Valine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17811.0": [
+        {
+            "name": "Arginine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "17912.0": [
+        {
+            "name": "Histidine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18114.0": [
+        {
+            "name": "Aspartic acid"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18518.0": [
+        {
+            "name": "Serine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1557.0": [
+        {
+            "name": "Fiber, insoluble"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1535.0": [
+        {
+            "name": "Fiber, soluble"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "9329.0": [
+        {
+            "name": "Vitamin K (Dihydrophylloquinone)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7772.0": [
+        {
+            "name": "Carotene, alpha"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "12297.0": [
+        {
+            "name": "MUFA 15:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "11831.0": [
+        {
+            "name": "SFA 21:0"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "13718.0": [
+        {
+            "name": "PUFA 18:2"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18676.0": [
+        {
+            "name": "Cysteine"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1000435.0": [
+        {
+            "name": "10-Formyl folic acid (10HCOFA)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "1000436.0": [
+        {
+            "name": "5-Formyltetrahydrofolic acid (5-HCOH4"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "1000432.0": [
+        {
+            "name": "5-methyl tetrahydrofolate (5-MTHF)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "16331.0": [
+        {
+            "name": "TFA 14:1 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "12085.0": [
+        {
+            "name": "MUFA 12:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "18621.0": [
+        {
+            "name": "Hydroxyproline"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "6599.0": [
+        {
+            "name": "Boron, B"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "6555.0": [
+        {
+            "name": "Cobalt, Co"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "6559.0": [
+        {
+            "name": "Molybdenum, Mo"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "6613.0": [
+        {
+            "name": "Nickel, Ni"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "6549.0": [
+        {
+            "name": "Sulfur, S"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "12717.0": [
+        {
+            "name": "MUFA 18:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "14519.0": [
+        {
+            "name": "PUFA 18:3"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7871.2": [
+        {
+            "name": "trans-Lycopene"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7266.0": [
+        {
+            "name": "Biotin"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "16841.0": [
+        {
+            "name": "Beta-sitosterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16740.0": [
+        {
+            "name": "Brassicasterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16639.0": [
+        {
+            "name": "Campesterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16873.0": [
+        {
+            "name": "Delta-5-avenasterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16878.0": [
+        {
+            "name": "Phytosterols, other"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16538.0": [
+        {
+            "name": "Stigmasterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16863.0": [
+        {
+            "name": "Campestanol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16869.0": [
+        {
+            "name": "Beta-sitostanol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7796.0": [
+        {
+            "name": "Cryptoxanthin, alpha"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "13278.2": [
+        {
+            "name": "MUFA 22:1 n-11"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "15358.0": [
+        {
+            "name": "PUFA 22:3"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1593.0": [
+        {
+            "name": "Total dietary fiber (AOAC 2011.25)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "3736.0": [
+        {
+            "name": "Citric acid"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "4443.0": [
+        {
+            "name": "Malic acid"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "1779.0": [
+        {
+            "name": "Total Sugars"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1237.0": [
+        {
+            "name": "Energy (Atwater General Factors)"
+        },
+        {
+            "unit": "kcal"
+        }
+    ],
+    "1248.0": [
+        {
+            "name": "Energy (Atwater Specific Factors)"
+        },
+        {
+            "unit": "kcal"
+        }
+    ],
+    "16226": [
+        {
+            "name": "Delta-7-Stigmastenol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16443.0": [
+        {
+            "name": "TFA 18:2 t"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "16857.0": [
+        {
+            "name": "Ergosterol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16255": [
+        {
+            "name": "Ergothioneine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16210": [
+        {
+            "name": "Ergosta-7-enol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "16211": [
+        {
+            "name": " Ergosta-7,22-dienol"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "9035.0": [
+        {
+            "name": "Vitamin D2 (ergocalciferol)"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "1327": [
+        {
+            "name": "Beta-glucan"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "9961.0": [
+        {
+            "name": "Glutathione"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "20027.0": [
+        {
+            "name": "Daidzin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "20038.0": [
+        {
+            "name": "Genistin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "20049.0": [
+        {
+            "name": "Glycitin"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "2450": [
+        {
+            "name": "Verbascose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2588.0": [
+        {
+            "name": "Raffinose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "2689.0": [
+        {
+            "name": "Stachyose"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "19810.0": [
+        {
+            "name": "Daidzein"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "19911.0": [
+        {
+            "name": "Genistein"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7787.0": [
+        {
+            "name": "Carotene, gamma"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "4948.0": [
+        {
+            "name": "Quinic acid"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "8730": [
+        {
+            "name": "Vitamin D4"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "1599.4": [
+        {
+            "name": "Low Molecular Weight Dietary Fiber (LMWDF)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "1598.3": [
+        {
+            "name": "High Molecular Weight Dietary Fiber (HMWDF)"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7532.0": [
+        {
+            "name": "Folate, food"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "7635.0": [
+        {
+            "name": "Folate, DFE"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "12326.0": [
+        {
+            "name": "MUFA 16:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "8493.0": [
+        {
+            "name": "Vitamin E, added"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "7918.0": [
+        {
+            "name": "Vitamin B-12, added"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "18562.0": [
+        {
+            "name": "Caffeine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "18663.0": [
+        {
+            "name": "Theobromine"
+        },
+        {
+            "unit": "mg"
+        }
+    ],
+    "13130.0": [
+        {
+            "name": "MUFA 22:1"
+        },
+        {
+            "unit": "g"
+        }
+    ],
+    "7431.0": [
+        {
+            "name": "Folic acid"
+        },
+        {
+            "unit": "ug"
+        }
+    ],
+    "18421.0": [
+        {
+            "name": "Alcohol, ethyl"
+        },
+        {
+            "unit": "g"
+        }
+    ]
 }

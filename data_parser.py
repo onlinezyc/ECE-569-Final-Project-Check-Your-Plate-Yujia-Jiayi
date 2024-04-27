@@ -60,38 +60,38 @@ def substance_extractor(data):
                 else: 
                     id_value = float(nutrient["sourceID"])
                 idx = id_value + int(nutrient["rank"])
-                    
                 if substances.get(idx, None) == None:
-                    substances[idx] = nutrient["name"]
+                    unit = nutrient["unit"] if nutrient["unit"] != "\u00c2\u00b5g" else "ug"
+                    substances[idx] = [{"name": nutrient["name"]}, {"unit": unit}]
                     counter += 1
 
     print(f"Found and added {counter} substances.")
     return substances
 
 
-ff_r_path = "data/USDA_foundation_food.json"  # read from path for foundation food data
-ff_w_path = "data/foundation_food.json"
+# ff_r_path = "data/USDA_foundation_food.json"  # read from path for foundation food data
+# ff_w_path = "data/foundation_food.json"
 
-sf_r_path = "data/USDA_survey_food.json"  # read from path for survey food data
-sf_w_path = "data/survey_food.json"
+# sf_r_path = "data/USDA_survey_food.json"  # read from path for survey food data
+# sf_w_path = "data/survey_food.json"
 
-ff_data = read_json_file(ff_r_path)  # foundation food
-refined_ff_data = data_extractor(ff_data)
-# write_as_json(ff_w_path, refined_ff_data)  # dump as .json file
-
-
-sf_data = read_json_file(sf_r_path)  # survey food
-refined_sf_data = data_extractor(sf_data, False)
-# write_as_json(sf_w_path, refined_sf_data)  # dump as .json file
+# ff_data = read_json_file(ff_r_path)  # foundation food
+# refined_ff_data = data_extractor(ff_data)
+# # write_as_json(ff_w_path, refined_ff_data)  # dump as .json file
 
 
-w_path = "data/food_info_digest.json"
-data = {**refined_ff_data, **refined_sf_data}  # merge the processed foundation food records and survey food records
-write_as_json(w_path, data)  # dump as .json file
+# sf_data = read_json_file(sf_r_path)  # survey food
+# refined_sf_data = data_extractor(sf_data, False)
+# # write_as_json(sf_w_path, refined_sf_data)  # dump as .json file
 
 
-# path = "data/food_info_digest.json"
-# sub_path = "data/substance_list.json"
-# data = read_json_file(path)
-# result = substance_extractor(data)
-# write_as_json(sub_path, result)
+# w_path = "data/food_info_digest.json"
+# data = {**refined_ff_data, **refined_sf_data}  # merge the processed foundation food records and survey food records
+# write_as_json(w_path, data)  # dump as .json file
+
+
+path = "data/food_info_digest.json"
+sub_path = "data/substance_list.json"
+data = read_json_file(path)
+result = substance_extractor(data)
+write_as_json(sub_path, result)
