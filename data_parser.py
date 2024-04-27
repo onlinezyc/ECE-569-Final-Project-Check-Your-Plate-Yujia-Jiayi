@@ -59,11 +59,21 @@ def substance_extractor(data):
                     id_value = 0
                 else: 
                     id_value = float(nutrient["sourceID"])
+
                 idx = id_value + int(nutrient["rank"])
-                if substances.get(idx, None) == None:
-                    unit = nutrient["unit"] if nutrient["unit"] != "\u00c2\u00b5g" else "ug"
-                    substances[idx] = [{"name": nutrient["name"]}, {"unit": unit}]
+                unit = nutrient["unit"] if nutrient["unit"] != "\u00c2\u00b5g" else "ug"  # special case handling
+                name = nutrient["name"] if nutrient["name"] != "Sugars, total including NLEA" else "Total Sugars"  # special case handling
+
+                check = substances.get(idx, None)
+                if check == None:
+                    substances[idx] = [{"name": name}, {"unit": unit}]
                     counter += 1
+
+                else:
+                    if check[0]["name"] != name:  # in case of idx sums up to be the same number by chance
+                        idx += .5  # subject to change
+                        substances[idx] = [{"name": name}, {"unit": unit}]
+                        counter += 1
 
     print(f"Found and added {counter} substances.")
     return substances
