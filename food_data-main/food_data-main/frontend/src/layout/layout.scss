@@ -1,0 +1,34 @@
+.header {
+  height: 56px;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(2, 9, 16, 0.13);
+  background: rgb(32, 156, 139);
+  .svg-style {
+    color: rgb(255, 255, 255);
+  }
+  .logo {
+    /* Logo */
+    position: absolute;
+    width: 126px;
+    height: 32px;
+    left: 32px;
+    right: 1122px;
+    top: 10px;
+    bottom: 14px;
+  }
+}
+
+.side {
+  width: 168px;
+  background: rgb(32, 156, 139);
+  box-shadow: 2px 0px 0px 0px rgba(97, 0, 194, 0.4);
+  .active {
+    color: #ffffff;
+    background: none;
+  }
+}
+.main {
+  // background: rgb(33, 32, 30);
+  // box-shadow: 2px 0px 90px 90px rgba(97, 0, 194, 0.4);
+  // color: #ffffff;
+}
