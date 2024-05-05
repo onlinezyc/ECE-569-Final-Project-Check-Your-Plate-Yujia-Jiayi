@@ -1,22 +1,22 @@
-## 本项目 使用 pnpm 管理依赖
+## This project utilizes `pnpm` to manage dependencies
 
-### 前端安装依赖
+### TO Install Front-end Dependencies
 ```shell
 cd frontend
 pnpm install
 ```
-### 后端安装依赖
+### TO Install Back-end Dependencies
 ```shell
 pip3 install -r requirements.txt
 ```
 
-### 启动前端
+### To run front-end
 ```shell
-cd frontend
+cd frontend  # make sure you are under the frontend subdirectory
 pnpm run dev
 ```
 
-### 启动后端
+### To run back-end 
 ```shell
 python3 manage.py runserver
 ```
