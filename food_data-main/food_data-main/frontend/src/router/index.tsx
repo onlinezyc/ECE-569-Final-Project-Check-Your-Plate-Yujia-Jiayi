@@ -21,28 +21,28 @@ const router = createBrowserRouter([
         path: '/home',
         element: <Home />,
         handle: {
-          title: '首页',
+          title: 'Landing Page',
         },
       },
       {
         path: '/food',
         element: <Food />,
         handle: {
-          title: '食物列表',
+          title: 'Food Nutrient Data Base',
         },
       },
       {
         path: '/nutrient',
         element: <Nutrient />,
         handle: {
-          title: '营养成分',
+          title: 'Nutrient Database',
         },
       },
       {
         path: '/profile',
         element: <Profile />,
         handle: {
-          title: '个人中心',
+          title: 'user-profile',
         },
       },
     ],

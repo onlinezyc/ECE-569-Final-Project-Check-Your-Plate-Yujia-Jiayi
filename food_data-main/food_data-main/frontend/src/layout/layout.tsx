@@ -1,6 +1,6 @@
 import { Outlet, useMatches, useNavigate } from 'react-router-dom'
 import { useMount, useSetState, useTitle } from 'ahooks'
-import logo from '@/assets/logo.svg'
+import logo from '@/assets/cyp_logo.png'
 import './layout.scss'
 export default () => {
   const matches: any = useMatches()
@@ -19,9 +19,10 @@ export default () => {
   return (
     <>
       <div className="flex w-screen h-screen flex-col">
-        <div className="header  navbar w-full flex ">
+        <div className="header navbar w-full flex ">
           <div className="navbar-start">
             <img className="logo" src={logo}></img>
+            <h1 className='logo-text'>Check Your Plate</h1>
           </div>
           <div className="navbar-end">
             <button className="btn btn-ghost btn-circle">
