@@ -57,8 +57,14 @@ WSGI_APPLICATION = 'food_data.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  
-        'NAME': BASE_DIR / 'media/data.db',  
+        # 'ENGINE': 'django.db.backends.sqlite3',  
+        # 'NAME': BASE_DIR / 'media/data.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'check_your_plate',
+        'USER': 'root',
+        'PASSWORD': '160909',
+        'HOST': 'localhost', 
+        'PORT': '3306',
     }
 }
 
@@ -78,9 +84,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LANGUAGE_CODE = 'zh-hans'
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = 'America/New_York'
 USE_TZ = True
 
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
@@ -99,5 +105,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 SIMPLEUI_DEFAULT_THEME = 'admin.lte.css'
-SIMPLEUI_HOME_TITLE = '首页'
+SIMPLEUI_HOME_TITLE = 'Homepage'
 SIMPLEUI_HOME_INFO = False
