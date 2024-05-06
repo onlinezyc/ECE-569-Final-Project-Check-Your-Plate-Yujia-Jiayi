@@ -1,4 +1,47 @@
-.img-top {
-  height: auto;
-  max-height: 380px;
+.bin {
+  padding: 0%;
+  border: 0;
+  margin: 1em auto;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+  width: 65vw;
+  margin: 1em auto;
+  background-color: #cbd5c0;
+}
+
+.cyp_img{
+  margin: 1em auto;
+  width: 26rem;
+  height: 20rem;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: 800;
+  color: #758467;
+}
+
+h2 {
+  font-size: larger;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  font-weight: 200;
+  color: #dddddd;
+}
+
+.sigBin {
+  padding: 1.5em;
+  margin: 2em auto;
+  background-color: #758467;
+}
+
+#sig {
+  color: emerald;
 }

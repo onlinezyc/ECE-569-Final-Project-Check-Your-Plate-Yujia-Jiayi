@@ -5,7 +5,7 @@ import {useMount} from 'ahooks'
 import axios from 'axios'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 
-export default () => {
+ () => {
     const [data, setData] = useState([
         {
             fdc_id: 1,
@@ -222,3 +222,5 @@ export default () => {
         </>
     )
 }
+
+export default Food

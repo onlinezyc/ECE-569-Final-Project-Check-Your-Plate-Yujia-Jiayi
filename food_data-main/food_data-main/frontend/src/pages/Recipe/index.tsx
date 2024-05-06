@@ -4,6 +4,7 @@ import { useMount } from 'ahooks'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import './recipe.scss'
+
 const Recipe = () => {
   const [data, setData] = useState([
     {

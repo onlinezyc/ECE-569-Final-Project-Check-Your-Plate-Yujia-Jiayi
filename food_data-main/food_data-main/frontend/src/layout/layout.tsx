@@ -63,7 +63,7 @@ export default () => {
                 </span>
               </div>
             </button>
-            <div className="dropdown  dropdown-end">
+            <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
                 role="button"
@@ -120,7 +120,7 @@ export default () => {
               </li>
 
               <li onClick={() => navigate('/home')}>
-                <a className={window.location.pathname === '/home' ? 'active' : ''}>
+                <a className={window.location.pathname === '/foods' ? 'active' : ''}>
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -134,7 +134,7 @@ export default () => {
               </li>
 
               <li onClick={() => navigate('/home')}>
-                <a className={window.location.pathname === '/home' ? 'active' : ''}>
+                <a className={window.location.pathname === '/nutrients' ? 'active' : ''}>
                 <svg
                   viewBox="0 0 256 512"
                   fill="currentColor"
@@ -147,8 +147,8 @@ export default () => {
                 </a>
               </li>
 
-              <li onClick={() => navigate('/recipe')}>
-                <a className={window.location.pathname === '/recipe' ? 'active' : ''}>
+              <li onClick={() => navigate('/recipes')}>
+                <a className={window.location.pathname === '/recipes' ? 'active' : ''}>
                 <svg
                   fill="none"
                   stroke="currentColor"

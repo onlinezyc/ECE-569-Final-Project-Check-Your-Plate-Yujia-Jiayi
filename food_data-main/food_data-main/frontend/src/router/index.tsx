@@ -6,8 +6,8 @@ const Recipe = lazy(() => import('@/pages/Recipe'))
 const NotFound = lazy(() => import('@/pages/Error/404'))
 const Login = lazy(() => import('@/pages/Login'))
 const Registration = lazy(() => import('@/pages/Login/register'))
-const Food = lazy(() => import('@/pages/Home/food'))
-const Nutrient = lazy(() => import('@/pages/Home/nutrient'))
+const Foods = lazy(() => import('@/pages/Foods'))
+const Nutrients = lazy(() => import('@/pages/Nutrients/Nutrients'))
 const Profile = lazy(() => import('@/pages/Profile'))
 const router = createBrowserRouter([
   {
@@ -26,21 +26,21 @@ const router = createBrowserRouter([
         },
       },
       {
-        path: '/food',
-        element: <Food />,
+        path: '/foods',
+        element: <Foods />,
         handle: {
           title: 'Food Nutrient Data Base',
         },
       },
       {
-        path: '/nutrient',
-        element: <Nutrient />,
+        path: '/nutrients',
+        element: <Nutrients />,
         handle: {
           title: 'Nutrient Database',
         },
       },
       {
-        path: '/recipe',
+        path: '/recipes',
         element: <Recipe />,
         handle: {
           title: 'Recipe Database',
