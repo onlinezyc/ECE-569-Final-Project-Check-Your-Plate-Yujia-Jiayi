@@ -7,7 +7,7 @@ class User(models.Model):
     username = models.CharField(max_length=20, verbose_name='user name')
     password = models.CharField(max_length=20, verbose_name='password')
     email = models.EmailField(verbose_name='email')
-    phone = models.CharField(max_length=11, verbose_name='phone')
+
 
     img = models.ImageField(upload_to='user/', verbose_name='imge', default='user/default.jpg')
 
@@ -19,11 +19,11 @@ class User(models.Model):
 
     weight = models.FloatField(verbose_name='Weight', default=60)
 
-    blood_pressure = models.CharField(max_length=20, verbose_name='血压', default='120/80')
+    blood_pressure = models.CharField(max_length=20, verbose_name='BP', default='120/80')
 
     diabetes = models.TextField(verbose_name='diabetes', default='false')
 
-    pregnancy = models.TextField(verbose_name='preganent', default='true')
+    pregnancy = models.TextField(verbose_name='pregnant', default='true')
 
     class Meta:
         db_table = 'user'
@@ -40,7 +40,7 @@ class Recipe(models.Model):
 
     author = models.TextField(verbose_name='author')
 
-    create_time = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+    create_time = models.DateTimeField(auto_now_add=True, verbose_name='Created')
 
     class Meta:
         db_table = 'recipe'

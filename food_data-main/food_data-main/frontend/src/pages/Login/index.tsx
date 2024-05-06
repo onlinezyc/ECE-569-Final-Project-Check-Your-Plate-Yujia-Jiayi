@@ -8,14 +8,14 @@ const Login = () => {
   const [userId, setUserId] = useLocalStorageState('userId', {
     defaultValue: 0,
   })
-  useTitle('请登录')
+  useTitle('Please Login')
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
   const handleLogin = () => {
     if (!username || !password) {
-      alert('用户名和密码不能为空')
+      alert('Please enter username and password!')
       return
     }
     axios

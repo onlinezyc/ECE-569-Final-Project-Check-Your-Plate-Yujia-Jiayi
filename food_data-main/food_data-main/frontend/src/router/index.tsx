@@ -2,6 +2,7 @@ import { Navigate, createBrowserRouter } from 'react-router-dom'
 import Layout from '@/layout/layout'
 import { lazy } from 'react'
 const Home = lazy(() => import('@/pages/Home'))
+const Recipe = lazy(() => import('@/pages/Recipe'))
 const NotFound = lazy(() => import('@/pages/Error/404'))
 const Login = lazy(() => import('@/pages/Login'))
 const Registration = lazy(() => import('@/pages/Login/register'))
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Navigate to="/home" />,
+        element: <Navigate to="/home" />,  // change back
       },
       {
         path: '/home',
@@ -36,6 +37,13 @@ const router = createBrowserRouter([
         element: <Nutrient />,
         handle: {
           title: 'Nutrient Database',
+        },
+      },
+      {
+        path: '/recipe',
+        element: <Recipe />,
+        handle: {
+          title: 'Recipe Database',
         },
       },
       {

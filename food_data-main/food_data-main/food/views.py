@@ -37,7 +37,6 @@ def login(request):
     return JsonResponse(data, safe=False)
 
 
-
 def register(request):
     data = json.loads(request.body.decode('utf-8'))
     username = data.get('username')
@@ -114,7 +113,6 @@ def update_user(request):
     return JsonResponse(data, safe=False)
 
 
-# 获取Recipe
 def get_recipe(request):
     list = []
     for recipe in serializers.serialize('python', Recipe.objects.all()):

@@ -12,12 +12,12 @@ const Registration = () => {
     defaultValue: 0,
   })
   const handleRegister = () => {
-    if (!username || !password || !email || !phone) {
+    if (!username || !password || !email) {
       setMessage('Please fill in all fields.')
       return
     }
     axios
-      .post('/api/register', { username, password, email, phone })
+      .post('/api/register', { username, password, email})
       .then(res => {
         if (res.data.success) {
           setMessage('Registration successful!')
@@ -66,7 +66,7 @@ const Registration = () => {
             onChange={e => setEmail(e.target.value)}
           />
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <input
             type="text"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
@@ -74,7 +74,7 @@ const Registration = () => {
             value={phone}
             onChange={e => setPhone(e.target.value)}
           />
-        </div>
+        </div> */}
         <div className="mb-4 text-red-500">{message}</div>
         <div>
           <button
